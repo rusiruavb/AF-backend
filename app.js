@@ -19,5 +19,5 @@ app.route('/').get((req, res) => {
 app.listen(PORT, () => {
   console.log(`Server start running on PORT ${PORT}`);
   databaseconnection();
-  routes();
+  routes(app);
 });
